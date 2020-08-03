@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TodoList</title>
+
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/todo.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js "></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 mt-5">
+				<div class="bg-white m-2 card card border-dark">
+					<h1 class="card-header font-weight-normal">TO-DO LIST <i class="fa fa-plus"></i></h1>
+					<div class="input-group card-title"><input class="form-control mx-3 py-2 mt-4" type="text" placeholder="Add new TO-DO"></div>
+					<div class = "p-3"><button class="btn btn-success" id="checkall">MARK AS ALL COMPLETED</button></div>
+					<ul class = "list-group list-group-flush" id="rev">
+					</ul>
+					<div id="total" class="card-footer text-muted ">
+						<span>Items in List: <span id="item-count">0</span></span>
+					</div>
+				</div>
+		       </div>
+			<div class="col-md-6 mt-5">
+				<div class="m-2 bg-white card card border-dark">
+					<h1 class="card-header">Completed Task  <i class="fa fa-check"></i></h1>
+					<div class="p-3 w-130lex justify-content-between"><button class="btn btn-info" id="incomp">MARK AS ALL INCOMPLETE</button>
+					<button class="btn btn-danger" id="delall">DELETE ALL</button></div>
+		 			<ul class = "list-group list-group-flush" id="comple"></ul>
+				</div>
+			</div>
+		</div>
+			
+	</div>
+    
+<script type="text/javascript" src="js/todo.js"></script>
+</body>
+</html>
